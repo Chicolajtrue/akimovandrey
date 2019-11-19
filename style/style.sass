@@ -1,0 +1,99 @@
+@import "color"
+@import "clear"	
+@import "offer"	
+@import "ico"
+@import "media"
+
+body
+ background-color: $bg-main
+ margin: 0
+a
+  color: #fff
+.scrollup
+ width: 40px
+ height: 40px
+ opacity: 0.3
+ position: fixed
+ bottom: 50px
+ right: 1%
+ display: none
+ text-indent: -9999px
+ background: url('../img/icon_top.png') no-repeat
+
+.header
+ background-image: url("../img/global-bg.jpg")
+ background-repeat: no-repeat
+ background-position: center
+ background-size: cover
+ height: 100vh
+.top-nav
+  position: fixed
+  width: 100%
+  background-color: $menu-color
+  margin: 0
+  padding: 0 25px
+  z-index: 1000
+  &_menu
+   display: flex
+   list-style: none
+   padding: 0
+   li 
+    margin-right: 45px
+    a
+     text-transform: uppercase
+     text-decoration: none
+     font-weight: 700
+     &:hover
+      color: $active-color
+.slider
+ margin-top: 80px
+ &-block
+  background-color: $white
+  height: 300px
+.catalog
+ .article
+  background-color: $white
+  margin: 10px
+  h2
+   text-align: center
+ figure
+  width: 250px
+  position: relative
+ figcaption
+  position: absolute
+  top: 15%
+  bottom: 15%
+  left: 0
+  right: 0
+  background-color: rgba(213,213,213,.8)
+  padding: 20px
+  font-family: Titillium, Arial, sans-serif
+  font-weight: 300
+  font-size: .9em
+  color: $font-main
+  opacity: 0
+  transition: opacity .75s ease-out
+ & figure
+  &:hover
+   & figcaption
+    opacity: 1 
+input
+ height: 40px
+ border: 1px solid #ddd 
+ &:hover
+  box-shadow: 0 0 10px rgba(0,0,255,.2) inset
+.footer
+ background-color: $footer-color
+ padding: 50px
+ color: $white
+ .foot-nav_menu
+  li
+  list-style: none  
+  padding: 10px
+  a
+   text-decoration: none
+   &:hover
+    color: $active-color
+  i
+   &:hover
+    color: $active-color 
