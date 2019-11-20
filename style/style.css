@@ -89,7 +89,7 @@ body {
   content: '\f189'; }
 
 /* '' */
-@media (max-width: 768) {
+@media (max-width: 530px) {
   .form_row {
     display: block; } }
 body {
