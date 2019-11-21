@@ -19,7 +19,7 @@
 
 	<body>
 	<div class="header">
-			<div class="top-nav row">
+			<div class="top-nav row" id="navbar">
 					<ul class="top-nav_menu">
 						<li><a href="#catalog">Каталог</a></li>
 						<li><a href="#footer">Связваться с нами</a></li>
@@ -33,21 +33,21 @@
 		<div class="container">
 			<div class="catalog" id = "catalog">
 				<div class="row">
-					<div class="col-md article">
+					<div class="col-md col-sm-12 article">
 						<h2>Polar название модели</h2>
 						<figure>
 							<img src="img/catalog/Garmin Forerunner.jpg" alt="Polar" width = 250px>
 							<figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam in vero, quas quis ad similique blanditiis dolorem ipsam ipsa tempora, omnis assumenda consequatur officia dolores dolorum. Cum laudantium iusto dolore.</figcaption>
 						</figure>
 					</div>
-					<div class="col-md article">
+					<div class="col-md col-sm-12 article">
 						<h2>Polar название модели</h2>
 						<figure>
 							<img src="img/catalog/Garmin Forerunner.jpg" alt="Polar" width = 250px>
 							<figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero asperiores modi ducimus doloremque dicta error dolorem, veritatis porro laboriosam eos iusto, cumque dolore, perspiciatis deserunt dolores sed assumenda? Consequatur, cupiditate.</figcaption>
 						</figure>
 					</div>
-					<div class="col-md article">
+					<div class="col-md col-sm-12 article">
 						<h2>Polar название модели</h2>
 						<figure>
 							<img src="img/catalog/Garmin Forerunner.jpg" alt="Polar" width = 250px>
@@ -56,21 +56,21 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md article">
+					<div class="col-md col-sm-12 article">
 						<h2>Polar название модели</h2>
 						<figure>
 							<img src="img/catalog/Garmin Forerunner.jpg" alt="Polar" width = 250px>
 							<figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime reprehenderit, atque distinctio quos, a laboriosam explicabo expedita ratione ipsum ullam praesentium iure. Doloribus animi nam quidem ad, consequatur repudiandae, iusto.</figcaption>
 						</figure>
 					</div>
-					<div class="col-md article">
+					<div class="col-md col-sm-12 article">
 						<h2>Polar название модели</h2>
 						<figure>
 							<img src="img/catalog/Garmin Forerunner.jpg" alt="Polar" width = 250px>
 							<figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ipsa illo laboriosam libero. Est soluta quis culpa quasi aperiam voluptatum, accusamus ipsa aliquid officia natus, itaque veritatis, eos esse aspernatur?</figcaption>
 						</figure>
 					</div>
-					<div class="col-md article">
+					<div class="col-md col-sm-12 article">
 						<h2>Polar название модели</h2>
 						<figure>
 							<img src="img/catalog/Garmin Forerunner.jpg" alt="Polar" width = 250px>
@@ -88,18 +88,18 @@
 						<form action="send.php" class="form offer-form" method="POST">
 							<div class="form_row">
 								<div class="form_group">
-									<input type="text" class="input form-input" placeholder="Ваше имя" name = "user_name">
+									<input type="text" class="input form-input" placeholder="Ваше имя" name = "user_name"required="required">
 								</div>
 								<div class="form_group">
-									<input type="text" class="input form-input" placeholder="Ваш телефон" name="user_phone">
+									<input type="tel" class="input form-input" placeholder="+79001234567" name="user_phone" required="required"  pattern="\+7\s?{0,1}9[0-9]{2}{0,1}\s?\d{3}{0,1}\d{2}{0,1}\d{2}">
 								</div>
 								<div class="form_group">
-									<input type="text" class="input form-input" placeholder="Название модели" name="user_model">
+									<input type="text" class="input form-input" placeholder="Название модели" name="user_model" required="required">
 								</div>
 							</div>
 							<div class="form_row">
 								<div class="form_group">
-									<input type="submit" class="button form_button" value="Оставить заявку">
+									<input type="submit" class="button form_button" value="Оставить заявку" >
 								</div>
 							</div>
 						</form>
