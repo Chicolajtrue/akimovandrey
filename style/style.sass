@@ -7,6 +7,7 @@
 body
  background-color: $bg-main
  margin: 0
+ font-family: 'Open Sans' sans-serif
 a
   color: #fff
 .scrollup
@@ -26,6 +27,7 @@ a
  background-position: center
  background-size: cover
  height: 100vh
+ position: relative
 .top-nav
   position: fixed
   width: 100%
@@ -46,6 +48,12 @@ a
      font-weight: 700
      &:hover
       color: $active-color
+.quote
+  position: absolute
+  right: 0
+  bottom: 0
+  text-align: center
+
 .slider
  margin-top: 80px
  &-block
@@ -98,3 +106,11 @@ input
   i
    &:hover
     color: $active-color 
+.button
+ border-radius: 20px
+ border: 1px solid #00f
+ margin-top: 10px
+.input
+ margin-right: 5px
+.fa
+ padding: 5px

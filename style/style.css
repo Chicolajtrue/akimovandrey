@@ -104,6 +104,11 @@ body {
 }
 
 /* '' */
+.icon-whatsapp:before {
+  content: '\f232';
+}
+
+/* '' */
 @media (max-width: 530px) {
   .form_row {
     display: block;
@@ -121,6 +126,7 @@ body {
 body {
   background-color: #E5E3FE;
   margin: 0;
+  font-family: "Open Sans" sans-serif;
 }
 
 a {
@@ -145,6 +151,7 @@ a {
   background-position: center;
   background-size: cover;
   height: 100vh;
+  position: relative;
 }
 
 .top-nav {
@@ -171,6 +178,13 @@ a {
 }
 .top-nav_menu li a:hover {
   color: #4A3EDD;
+}
+
+.quote {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: center;
 }
 
 .slider {
@@ -236,4 +250,18 @@ input:hover {
 }
 .footer .foot-nav_menu i:hover {
   color: #4A3EDD;
+}
+
+.button {
+  border-radius: 20px;
+  border: 1px solid #00f;
+  margin-top: 10px;
+}
+
+.input {
+  margin-right: 5px;
+}
+
+.fa {
+  padding: 5px;
 }
